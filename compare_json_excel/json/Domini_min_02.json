@@ -1,0 +1,75 @@
+{
+  "listaDomini": [
+    {
+      "codice": "TIPO_CASA",
+      "domini": [
+        {
+          "codice": "10",
+          "descrizione": "DI PROPRIETA"
+        },
+        {
+          "codice": "20",
+          "descrizione": "IN AFFITTO"
+        },
+        {
+          "codice": "30",
+          "descrizione": "ALTRO"
+        }
+      ]
+    },
+    {
+      "codice": "STATO_CONFERMA",
+      "domini": [
+        {
+          "codice": "07",
+          "descrizione": "IN CORSO"
+        },
+        {
+          "codice": "08",
+          "descrizione": "CONFERMATA"
+        },
+        {
+          "codice": "09",
+          "descrizione": "CANCELLATA"
+        }
+      ]
+    },
+    {
+      "codice": "VALORE_DEL_REDDITO",
+      "domini": [
+        {
+          "codice": "100",
+          "descrizione": "0 -> 25.000 EURO"
+        },
+        {
+          "codice": "102",
+          "descrizione": "25.000 -> 50.000 EURO"
+        },
+        {
+          "codice": "103",
+          "descrizione": "PIU DI 50.000 EURO"
+        }
+      ]
+    },
+    {
+      "codice": "TIPO_TEST",
+      "domini": [
+        {
+          "codice": "A",
+          "descrizione": "TEST TIPO A"
+        },
+        {
+          "codice": "B",
+          "descrizione": "TEST TIPO B"
+        },
+        {
+          "codice": "C",
+          "descrizione": "TEST TIPO C"
+        }
+      ]
+    }
+  ],
+  "valori": [],
+  "note": [],
+  "errori": []
+}

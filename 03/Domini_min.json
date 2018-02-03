@@ -1,0 +1,55 @@
+{
+  "listaDomini": [
+    {
+      "codice": "TIPO_SESSO",
+      "domini": [
+        {
+          "codice": "F",
+          "descrizione": "FEMMINA"
+        },
+        {
+          "codice": "M",
+          "descrizione": "MASCHIO"
+        }
+      ]
+    },
+    {
+      "codice": "TIPO_SOGGETTO",
+      "domini": [
+        {
+          "codice": "F",
+          "descrizione": "FISICA (P)"
+        },
+        {
+          "codice": "G",
+          "descrizione": "ALTRO"
+        }
+      ]
+    },
+	{
+      "codice": "TIPO_DEVICE",
+      "domini": [
+        {
+          "codice": "01",
+          "descrizione": "TELEFONO FISSO"
+        },
+        {
+          "codice": "02",
+          "descrizione": "CELLULARE"
+        },
+        {
+          "codice": "03",
+          "descrizione": "FAX"
+        },
+        {
+          "codice": "04",
+          "descrizione": "TELEX"
+        },
+        {
+          "codice": "06",
+          "descrizione": "ALTRO"
+        }
+      ]
+    }
+  ]
+}
