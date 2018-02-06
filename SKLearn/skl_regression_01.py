@@ -103,4 +103,5 @@ plt.xlabel("Anno")
 plt.ylabel("S&P 500 (chiusure)")
 plt.legend(["Reale", "Predetto"], loc="lower right")
 
+#### export plot
 plt.savefig("my_plot_img/valoriChiusuraSP-regressioneLineare.pdf")
