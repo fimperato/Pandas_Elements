@@ -12,6 +12,10 @@ import matplotlib, matplotlib.pyplot as plt
 import sklearn.linear_model as lm
 from sklearn.model_selection import train_test_split
 
+# http://pandas-docs.github.io/pandas-docs-travis/#returning-a-view-versus-a-copy
+# false positive SettingWithCopyWarning 
+#pd.options.mode.chained_assignment = None  # default='warn'
+
 ## Dati grezzi da csv (automobili data)
 print("## Get the data")
 DF_DATASET = pd.read_csv("dataset/automobile/imports-85.csv")
@@ -46,6 +50,11 @@ DF_train, DF_test = train_test_split(DF_DATASET, test_size=0.2)
 
 DF_train.sort_index(inplace=True)
 DF_test.sort_index(inplace=True)
+print("@ LOG DEBUG: "+str(DF_test._is_view))
+print("@ LOG DEBUG: "+str(DF_test.is_copy))
+DF_my_copy = DF_test.copy()
+print("@ LOG DEBUG (DF_my_copy): "+str(DF_my_copy._is_view))
+print("@ LOG DEBUG (DF_my_copy): "+str(DF_my_copy.is_copy))
 
 ## Preparo il modello ed eseguo il fit sui dati di test
 print("## TRAIN: Prepare the model and fit it ")
@@ -88,6 +97,7 @@ plt.title("OLS Regression")
 plt.xlabel("Engine-size")
 plt.ylabel("Prezzo")
 plt.legend(["Reale", "Predetto"], loc="lower right")
+
 '''
 print("\r\nCHECK")
 print(DF_test.index)
