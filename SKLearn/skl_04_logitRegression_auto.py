@@ -84,4 +84,4 @@ plt.ylabel("Prezzo")
 plt.legend(["Reale", "Predetto"], loc="lower right")
 
 #### export plot
-plt.savefig("my_plot_img/automobiliPrice-ridgeRegression.pdf")
+plt.savefig("my_plot_img/automobiliPrice-logitRegression.pdf")
